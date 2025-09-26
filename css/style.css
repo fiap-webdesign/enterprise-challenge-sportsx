@@ -627,7 +627,7 @@ body {
 .testimonial-content {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
 }
 
 .testimonial-rating {
@@ -646,9 +646,9 @@ body {
   font-weight: 600;
   font-style: italic;
   font-size: 16px;
-  line-height: 28px;
+  line-height: 18px;
   letter-spacing: -0.2px;
-  margin-top: 60px;
+  margin-top: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -1016,3 +1016,63 @@ ________________________________________________________________________________
   margin-bottom: 56px;
   text-align: left;
 }
+
+.testimonial-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.testimonial-slide {
+  display: flex;
+  justify-content: center;   /* centraliza os dois cards juntos */
+  align-items: stretch;
+  min-width: 100%;           /* cada slide ocupa toda a tela */
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.testimonial-card {
+  width: 45%;                 /* dois cards lado a lado */
+  max-width: 50%;
+  background: transparent;
+  padding: 20px;
+  display: flex;
+  align-items: center;        /* imagem e texto alinhados na vertical */
+  gap: 20px;
+}
+
+.testimonial-person {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.testimonial-content {
+  text-align: left;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-primary, #674695);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  width: 35px;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
