@@ -57,12 +57,12 @@ Combinado à tipografia Outfit, transmite uma marca **sólida, inovadora e cheia
 ---
 
 ## 🖼️ Layout no Figma
-👉 [Acesse o protótipo no Figma](https://www.figma.com/design/QtaMgmCtG6Y0UcIVD4mC70/Enterprise-Challenge?node-id=348-2&t=G8Y0sdoiVUFy7WKq-1)
+👉 <a href="https://www.figma.com/design/QtaMgmCtG6Y0UcIVD4mC70/Enterprise-Challenge?node-id=348-2&t=G8Y0sdoiVUFy7WKq-1" target="_blank">Acesse o protótipo no Figma</a>
 
 ---
 
 ## 💻 Telas Funcionais
-👉 [Acesse o site publicado](https://fiap-webdesign.github.io/enterprise-challenge-sportsx/)  
+👉 <a href="https://fiap-webdesign.github.io/enterprise-challenge-sportsx/" target="_blank">Acesse o site publicado</a>  
 
 ---
 
