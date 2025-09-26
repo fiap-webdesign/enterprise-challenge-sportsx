@@ -62,7 +62,7 @@ Combinado à tipografia Outfit, transmite uma marca **sólida, inovadora e cheia
 ---
 
 ## 💻 Telas Funcionais
-👉 [Acesse o site publicado](https://isalvesb.github.io/sportsx-enterprise-challenge/)  
+👉 [Acesse o site publicado](https://fiap-webdesign.github.io/enterprise-challenge-sportsx/)  
 
 ---
 
