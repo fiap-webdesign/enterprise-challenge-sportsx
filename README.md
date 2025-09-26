@@ -1,4 +1,4 @@
-# 🏅 SportsX – Plataforma para Valorização dos Esportes Invisibilizados
+# 🏅 SportsX – Visibilidade que conecta
 
 ## 📖 Descrição do Projeto
 O **SportsX** é uma plataforma digital criada no contexto do **Enterprise Challenge**, em parceria com a **Concentrix** e o **Google**.  
