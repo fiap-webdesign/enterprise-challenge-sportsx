@@ -56,88 +56,75 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html#section-hero">Página inicial</a></li>
-                    <li><a href="esporte-descricao-sobre.html#section-sports">Esportes</a></li>
-                    <li><a href="#section-teachers">Professores e Parceiros</a></li>
+                    <li><a href="#section-sports">Esportes</a></li>
+                    <li><a href="professores-e-parceiros.html#section-teachers">Professores e Parceiros</a></li>
                     <li><a href="comunidade.html#section-testimonials">Comunidade</a></li>
                     <li><a href="seja-um-patrocinador.html#section-sponsor">Seja um patrocinador</a></li>
-                    <li><a href="#" class="user-icon" title="Perfil do usuário"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="#" class="user-icon" title="Perfil do usuário"><i class="fa-solid fa-user"></i></a>
+                    </li>
                 </ul>
             </nav>
 
-<!---------------------------------------------- Botão menu hamburguer  ------------------------------------------------>
+            <!------------------------ Botão menu hamburguer --------------------------------->
             <button class="hamburguer" aria-label="Abrir menu de navegação">
                 <i class="fa-solid fa-bars"></i>
             </button>
     </header>
 
-<!--============================================================ Título e barra de busca  ===================================================================-->
-    <section id="professors" class="professors-section">
+<!--======================================================================= Começo da Página ================================================================-->
+    <section id="sport-details" class="sport-details-section">
         <div class="container">
-            <h1 class="section-title">Professores e Parceiros</h1>
-            <div class="search-container">
-                <p class="search-subtitle">+ de 450 professores avaliados com 5 estrelas</p>
-                <form action="" class="search-form">
-                    <input type="text" class="search-input" placeholder="Busque por um esporte ou localização">
-                    <button type="submit" class="search-button">Buscar</button>
-                </form>
+            <div class="sport-details-grid">
+                <div class="sport-visuals">
+                    <h1>Slackline - Highline</h1>
+                    <img src="images/card-slackline-pagina-esporte.webp"
+                        alt="Uma pessoa praticando slackline no alto de uma floresta">
+                </div>
+                <div class="sport-info">
+                    <h2>Porquê praticar Slackline?</h2>
+                    <p>O Slackline vai muito além do equilíbrio.
+                        É uma prática que desenvolve concentração, força e controle corporal, conectando o corpo e a
+                        mente em perfeita harmonia.
+                        Além de ser um esporte versátil, pode ser praticado em praias, parques e academias, promovendo
+                        bem-estar, foco e diversão.
+                        Com cada passo sobre a fita, você aprende a equilibrar também o seu ritmo de vida.</p>
+                    <div class="tags-container">
+                        <div class="tag">
+                            <div class="icon-group">
+                                <i class="fa-solid fa-trophy"></i>
+                                <i class="fa-solid fa-trophy"></i>
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <span>Intensidade</span>
+                        </div>
+                        <div class="tag tag-adrenalina">
+                            <div class="icon-group">
+                                <i class="fa-solid fa-bolt"></i>
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <span>Adrenalina</span>
+                        </div>
+                        <div class="tag">
+                            <i class="fa-solid fa-sun"></i>
+                            <span>Ar livre</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-<!--================================================================= Professores ===========================================================================-->
-            <div class="professors-grid">
+<!--===================================================================== Professores =======================================================================-->
+    <section id="section-teachers" class="teachers-section">
+        <div class="container-teachers">
+            <div class="section-header">
+                <img src="images/decor.webp" alt="decoracao" class="section-decorator">
+                <h2 class="teachers-title">Encontre professores ou parceiros para praticar Slackline e outros esportes
+                </h2>
+            </div>
+            <div class="teachers-grid-esportes">
 
-                <!--------------------------------- Leonardo Souza - Slackline  --------------------------------------->
-                <article class="teacher-card">
-                    <div class="teacher-card-image-wrapper">
-                        <img src="images/card-img-professor-leonardo-souza.webp" alt="Leonardo Souza"
-                            class="teacher-card-img">
-                        <div class="teacher-card-image-overlay">
-                            <h4 class="teacher-name">Leonardo Souza</h4>
-                            <p class="teacher-location"><i class="fa-solid fa-location-dot"></i>Paranapiacaba - São
-                                Paulo</p>
-                        </div>
-                    </div>
-                    <div class="teacher-card-body">
-                        <div class="teacher-card-rating">
-                            <i class="fa-solid fa-star"></i><span>5</span>
-                            <span class="rating-count">(48 avaliações)</span>
-                        </div>
-                        <h5 class="teacher-sport">Slackline</h5>
-                        <div class="teacher-card-level"><i class="fa-solid fa-trophy"></i><span>Avançado</span></div>
-                        <p class="teacher-card-desc">Especialista em equilíbrio e concentração, ensino desde o básico do
-                            slackline até movimentos avançados, ajudando você a desenvolver coordenação e foco.
-                        </p>
-                        <a href="#" class="teacher-card-link">Ver perfil completo<i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </article>
-
-                <!--------------------------------------- Luana Santos - Capoeira ------------------------------------>
-                <article class="teacher-card">
-                    <div class="teacher-card-image-wrapper">
-                        <img src="images/card-img-professor-luana-santos.webp" alt="Luana Santos"
-                            class="teacher-card-img">
-                        <div class="teacher-card-image-overlay">
-                            <h4 class="teacher-name">Luana Santos</h4>
-                            <p class="teacher-location"><i class="fa-solid fa-location-dot"></i>Lapa - Rio de Janeiro
-                            </p>
-                        </div>
-                    </div>
-                    <div class="teacher-card-body">
-                        <div class="teacher-card-rating">
-                            <i class="fa-solid fa-star"></i><span>5</span>
-                            <span class="rating-count">(39 avaliações)</span>
-                        </div>
-                        <h5 class="teacher-sport">Capoeira</h5>
-                        <div class="teacher-card-level"><i class="fa-solid fa-trophy"></i><span>Avançado</span></div>
-                        <p class="teacher-card-desc">Unindo música, cultura e movimento, compartilho a arte da capoeira
-                            de forma inclusiva e divertida, promovendo flexibilidade, ritmo e expressão corporal.
-                        </p>
-                        <a href="#" class="teacher-card-link">Ver perfil completo<i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </article>
-
-                <!---------------------------- Davi Ramalho - Escalada  ----------------------------------->
+                <!------------------------------ Davi Ramalho - Escalada -------------------------->
                 <article class="teacher-card">
                     <div class="teacher-card-image-wrapper">
                         <img src="images/card-img-professor-davi-ramalho.webp" alt="Davi Ramalho"
@@ -163,32 +150,7 @@
                     </div>
                 </article>
 
-                <!------------------------------- Roberto Pires - Asa Delta  ------------------------------------>
-                <article class="teacher-card">
-                    <div class="teacher-card-image-wrapper">
-                        <img src="images/card-img-professor-asa-delta.webp" alt="Roberto Pires" class="teacher-card-img">
-                        <div class="teacher-card-image-overlay">
-                            <h4 class="teacher-name">Roberto Pires</h4>
-                            <p class="teacher-location"><i class="fa-solid fa-location-dot"></i>Paranapiacaba - São
-                                Paulo
-                            </p>
-                        </div>
-                    </div>
-                    <div class="teacher-card-body">
-                        <div class="teacher-card-rating">
-                            <i class="fa-solid fa-star"></i><span>5</span>
-                            <span class="rating-count">(97 avaliações)</span>
-                        </div>
-                        <h5 class="teacher-sport">Asa Delta</h5>
-                        <div class="teacher-card-level"><i class="fa-solid fa-trophy"></i><span>Avançado</span></div>
-                        <p class="teacher-card-desc">Instrutor de asa delta apaixonado por voar e ensinar. Com experiência em altitude e segurança, guio alunos a viverem a liberdade dos céus com técnica, confiança e emoção em cada voo.
-                        </p>
-                        <a href="#" class="teacher-card-link">Ver perfil completo<i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </article>
-
-                <!---------------------------- Mariana Sakamoto - Corrida de trilha  --------------------------------->
+                <!------------------ Mariana Sakamoto - Corrida de trilha ------------------------------>
                 <article class="teacher-card">
                     <div class="teacher-card-image-wrapper">
                         <img src="images/card-img-professor-mariana-sakamoto.webp" alt="Mariana Sakamoto"
@@ -214,13 +176,15 @@
                     </div>
                 </article>
 
-                <!--------------------------------- José Maria - Capoeira  ------------------------------>
+                <!---------------------- Luana Santos - Capoeira ------------------------------>
                 <article class="teacher-card">
                     <div class="teacher-card-image-wrapper">
-                        <img src="images/card-img-professor-capoeira.webp" alt="José Maria" class="teacher-card-img">
+                        <img src="images/card-img-professor-luana-santos.webp" alt="Luana Santos"
+                            class="teacher-card-img">
                         <div class="teacher-card-image-overlay">
-                            <h4 class="teacher-name">José Maria</h4>
-                            <p class="teacher-location"><i class="fa-solid fa-location-dot"></i>Salvador - Bahia</p>
+                            <h4 class="teacher-name">Luana Santos</h4>
+                            <p class="teacher-location"><i class="fa-solid fa-location-dot"></i>Lapa - Rio de Janeiro
+                            </p>
                         </div>
                     </div>
                     <div class="teacher-card-body">
@@ -230,20 +194,22 @@
                         </div>
                         <h5 class="teacher-sport">Capoeira</h5>
                         <div class="teacher-card-level"><i class="fa-solid fa-trophy"></i><span>Avançado</span></div>
-                        <p class="teacher-card-desc">Professor de capoeira com mais de 12 anos de experiência, ensino técnica, cultura e musicalidade em um ambiente acolhedor e cheio de energia.</p>
-                        <a href="perfil-professor.html" class="teacher-card-link">Ver perfil completo<i
+                        <p class="teacher-card-desc">Unindo música, cultura e movimento, compartilho a arte da capoeira
+                            de forma inclusiva e divertida, promovendo flexibilidade, ritmo e expressão corporal.
+                        </p>
+                        <a href="#" class="teacher-card-link">Ver perfil completo<i
                                 class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </article>
             </div>
 
             <div class="section-ver-mais">
-                <a href="#section-teachers" class="btn-ver-mais">Ver mais professores</a>
+                <a href="professores-e-parceiros.html" class="btn-ver-mais">Ver mais professores</a>
             </div>
         </div>
     </section>
 
-<!--==================================================================== Rodapé =============================================================================-->
+<!--========================================================================== Rodapé =======================================================================-->
     <footer id="section-footer" class="site-footer">
         <div class="container footer-main">
             <div class="footer-column footer-logo-column">
@@ -259,7 +225,7 @@
                 <nav class="footer-nav">
                     <ul>
                         <li><a href="index.html#section-hero">Página inicial</a></li>
-                        <li><a href="esporte-descricao-sobre.html#section-sports">Esportes</a></li>
+                        <li><a href="#section-sports">Esportes</a></li>
                         <li><a href="onde-praticar-mapa.html#section-local">Onde praticar</a></li>
                     </ul>
                 </nav>
@@ -290,7 +256,7 @@
         </div>
     </footer>
 
-<!-- =================================================================== JavaScript =======================================================================-->
+<!-- =================================================================== JavaScript =========================================================================-->
     <script src="js/script.js"></script>
 </body>
 
