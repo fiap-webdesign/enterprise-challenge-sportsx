@@ -8,6 +8,23 @@ O SportsX nasce com o propósito de dar voz aos esportes invisibilizados, criand
 
 ---
 
+## 🎬 Pitch da Ideia
+
+<p align="center">
+  <a href="https://youtu.be/KkuGn9LqyQM" target="_blank">
+    <img src="https://img.youtube.com/vi/KkuGn9LqyQM/maxresdefault.jpg" 
+         alt="Pitch da SportsX" 
+         width="80%" 
+         style="border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.3);" />
+  </a>
+</p>
+
+<p align="center">
+  ▶️ <a href="https://youtu.be/KkuGn9LqyQM" target="_blank"><strong>Assistir ao Pitch no YouTube</strong></a>
+</p>
+
+---
+
 ## 🎯 Contexto e Proposta
 - **Contexto:** O esporte é uma das maiores formas de integração social, mas muitos permanecem invisibilizados.  
 - **Proposta:** Criar uma plataforma que dê espaço para modalidades pouco divulgadas, aproximando atletas, fãs e comunidades.  
@@ -67,11 +84,11 @@ Combinado à tipografia Outfit, transmite uma marca **sólida, inovadora e cheia
 ---
 
 ## 🚀 Tecnologias Utilizadas
-- Figma → Prototipagem visual  
-- HTML5 & CSS3 → Desenvolvimento das telas  
-- JavaScript → Interações básicas  
-- GitHub Pages → Publicação do projeto  
-- GitHub → Versionamento e colaboração
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=flat)](https://developer.mozilla.org/docs/Web/HTML) [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=flat)](https://developer.mozilla.org/docs/Web/CSS) → Desenvolvimento das telas <br>
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat)](https://developer.mozilla.org/docs/Web/JavaScript) → Interações básicas <br>
+[![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white&style=flat)](https://www.figma.com/) → Prototipagem visual <br>
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=flat)](https://github.com/isalvesb/sportsx-enterprise-challenge) → Versionamento e colaboração <br>
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-2088FF?logo=github&logoColor=white&style=flat)](https://isalvesb.github.io/sportsx-enterprise-challenge/) → Publicação do projeto
 
 ---
 
@@ -83,3 +100,6 @@ Combinado à tipografia Outfit, transmite uma marca **sólida, inovadora e cheia
 - **Mirna L Marinho Carneiro Andrade** – Arquitetura & Design no Figma
 
 ---
+
+
+
