@@ -7,7 +7,7 @@
     <title>Sports X</title>
 
     <!-- favicon -->
-    <link rel="icon" href="images/favicon.io.webp" type="image/png" />
+    <link rel="icon" href="images/favicon.io.webp" type="image/webp" />
 
     <!-- Chamada google fonts -->
 
@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <!-- Chamada CSS  -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css?v=20261119" />
     <link rel="stylesheet" href="css/var.css" />
 
     <!-- Chamada Mapa Leaflet -->
@@ -46,6 +46,7 @@
 
 
 <body>
+    <p class="demo-notice">Protótipo acadêmico. Cadastro, envio de propostas e interações sociais são demonstrações.</p>
     <header class="site-header">
         <div class="header-container container">
             <a href="index.html" class="logo">
@@ -56,34 +57,37 @@
                 </div>
             </a>
 
-            <nav class="main-nav">
-                <ul>
+            <nav class="main-nav" aria-label="Navegação principal">
+                <button class="hamburguer" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="menu-principal">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                </button>
+                <ul id="menu-principal">
                     <li><a href="index.html#section-hero">Página inicial</a></li>
-                    <li><a href="esporte-descricao-sobre.html#section-sports">Esportes</a></li>
-                    <li><a href="professores-e-parceiros.html#section-teachers">Professores e Parceiros</a></li>
-                    <li><a href="comunidade.html#section-testimonials">Comunidade</a></li>
-                    <li><a href="seja-um-patrocinador.html#section-sponsor">Seja um patrocinador</a></li>
-                    <li><a href="#" class="user-icon" title="Perfil do usuário"><i class="fa-solid fa-user"></i></a></li>
+                    <li><a href="esporte-descricao-sobre.html#sport-details">Esportes</a></li>
+                    <li><a href="professores-e-parceiros.html#professors">Professores e Parceiros</a></li>
+                    <li><a href="comunidade.html#communities-hero">Comunidade</a></li>
+                    <li><a href="seja-um-patrocinador.html#sponsor">Seja um patrocinador</a></li>
+                    <li><a role="link" class="user-icon" aria-label="Perfil do usuário" aria-disabled="true" title="Demonstração: ação indisponível" data-demo="true"><i class="fa-solid fa-user" aria-hidden="true"></i></a></li>
                 </ul>
             </nav>
 
-<!---------------------------------------------- Botão menu hamburguer  ------------------------------------------------>
-            <button class="hamburguer" aria-label="Abrir menu de navegação">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+        </div>
     </header>
 
 <!--=================================================================== Começo da Página ====================================================================-->
+    <main>
     <section id="map-search" class="map-search-section">
         <div class="container-onde-praticar">
             <div class="map-header">
                 <h1 class="section-title">Onde praticar</h1>
-                <p class="search-subtitle">+ de 147 locais para você praticar seu esporte favorito</p>
+                <p class="search-subtitle">Dois locais de demonstração em São Paulo</p>
 
-                <form action="" class="search-form">
-                    <input type="text" class="search-input" placeholder="escalada são paulo">
-                    <button type="submit" class="search-button">Buscar</button>
+                <form class="search-form" role="search">
+                    <input type="search" class="search-input" aria-label="Buscar locais de prática" placeholder="Ex.: Fábrica" disabled>
+                    <button type="submit" class="search-button" disabled>Buscar</button>
                 </form>
+                <p id="map-search-status" role="status"></p>
+                <noscript><p>Ative o JavaScript para usar a busca e o mapa interativo.</p></noscript>
             </div>
 
             
@@ -91,10 +95,11 @@
                 <!---------------------- Mapa ----------------------->
                 <div class="map-container">
                     <div id="map"></div>
+                    <p id="map-unavailable" hidden>O mapa não carregou. A lista de locais continua disponível.</p>
                 </div>
 
 <!--====================================================================== Locais ===========================================================================-->
-                <aside class="locations-list">
+                <aside class="locations-list" aria-label="Locais de prática">
                     <article class="location-card" data-id="90-graus">
                         <h3 class="location-name">
                             <i class="fa-solid fa-location-dot"></i>
@@ -111,9 +116,10 @@
 
                         <div class="location-details">
                             <p>Academia de escalada</p>
-                            <p>Av. João Pedro Cardoso, 107</p>
-                            <p>Aberto - Fecha às 23h</p>
+                            <p>Av. João Pedro Cardoso, 107 · São Paulo</p>
+                            <p>Horário ilustrativo: até 23h</p>
                         </div>
+                        <button type="button" class="location-map-button" aria-label="Ver 90 Graus Escalada no mapa" hidden>Ver no mapa</button>
                     </article>
 
                     <article class="location-card" data-id="fabrica-vila-madalena">
@@ -132,9 +138,10 @@
 
                         <div class="location-details">
                             <p>Academia de escalada</p>
-                            <p>R. da Paz dos Lírios, 1978</p>
-                            <p>Aberto - Fecha às 23h</p>
+                            <p>R. da Paz dos Lírios, 1978 · São Paulo</p>
+                            <p>Horário ilustrativo: até 23h</p>
                         </div>
+                        <button type="button" class="location-map-button" aria-label="Ver Fábrica Escalada (Vila Madalena) no mapa" hidden>Ver no mapa</button>
                     </article>
                 </aside>
             </div>
@@ -143,10 +150,12 @@
     </section>
 
  <!--===================================================================== Rodapé ===========================================================================-->
+    </main>
+
     <footer id="section-footer" class="site-footer">
         <div class="container footer-main">
             <div class="footer-column footer-logo-column">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="images/logo.webp" alt="SportsX Logo Icon" class="logo-icon">
                     <div class="logo-text">
                         <span class="logo-title">SportsX</span>
@@ -158,17 +167,17 @@
                 <nav class="footer-nav">
                     <ul>
                         <li><a href="index.html#section-hero">Página inicial</a></li>
-                        <li><a href="esporte-descricao-sobre.html#section-sports">Esportes</a></li>
-                        <li><a href="onde-praticar-mapa.html#section-local">Onde praticar</a></li>
+                        <li><a href="esporte-descricao-sobre.html#sport-details">Esportes</a></li>
+                        <li><a href="onde-praticar-mapa.html#map-search">Onde praticar</a></li>
                     </ul>
                 </nav>
             </div>
             <div class="footer-column">
                 <nav class="footer-nav">
                     <ul>
-                        <li><a href="seja-um-patrocinador.html#section-sponsor">Seja um patrocinador</a></li>
-                        <li><a href="comunidade.html#section-testimonials">Comunidade</a></li>
-                        <li><a href="professores-e-parceiros.html#section-teachers">Professores e parceiros</a></li>
+                        <li><a href="seja-um-patrocinador.html#sponsor">Seja um patrocinador</a></li>
+                        <li><a href="comunidade.html#communities-hero">Comunidade</a></li>
+                        <li><a href="professores-e-parceiros.html#professors">Professores e parceiros</a></li>
                     </ul>
                 </nav>
             </div>
@@ -176,11 +185,11 @@
             <div class="footer-column">
                 <h6 class="footer-heading">Redes sociais</h6>
                 <div class="social">
-                    <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" target="_blank" aria-label="Twitch"><i class="fa-brands fa-twitch"></i></a>
+                    <a role="link" aria-label="Instagram" aria-disabled="true" title="Demonstração: ação indisponível" data-demo="true"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                    <a role="link" aria-label="Facebook" aria-disabled="true" title="Demonstração: ação indisponível" data-demo="true"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
+                    <a role="link" aria-label="Twitch" aria-disabled="true" title="Demonstração: ação indisponível" data-demo="true"><i class="fa-brands fa-twitch" aria-hidden="true"></i></a>
                 </div><br>
-                <a href="mailito:contato@sportsx.com" class="footer-link">contato@sportsx.com</a>
+                <a href="mailto:contato@sportsx.com" class="footer-link">contato@sportsx.com</a>
             </div>
 
             <div class="container footer-bottom">
@@ -196,7 +205,7 @@
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="">
         </script>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js?v=20261119"></script>
 </body>
 
 </html>
