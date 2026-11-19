@@ -14,7 +14,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1440;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 84px 0 84px;
@@ -155,8 +155,8 @@ body {
   display: none;
   flex-direction: column;
   justify-content: space-around;
-  width: 30px;
-  height: 25px;
+  width: 44px;
+  height: 44px;
   font-size: 16px;
   background: var(--primary-color);
   border: none;
@@ -182,7 +182,7 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.main-nav a:hover {
+.main-nav a:not([data-demo]):hover {
   color: var(--secondary-color);
 }
 
@@ -192,7 +192,7 @@ body {
   gap: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .hamburguer {
     display: block;
   }
@@ -207,6 +207,10 @@ body {
     background: var(--primary-color);
     padding: 15px;
     border-radius: 8px;
+    max-width: calc(100vw - 40px);
+    max-height: calc(100vh - 74px);
+    max-height: calc(100dvh - 74px);
+    overflow-y: auto;
   }
 
   .main-nav ul.active {
@@ -225,7 +229,7 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .main-nav a:last-child {
+  .main-nav li:last-child > a {
     border-bottom: none;
   }
 
@@ -323,7 +327,7 @@ body {
 }
 
 /* Zoom suave ao passar o mouse */
-.sport-card:hover .sport-card-bg {
+.sport-card:not([data-demo]):hover .sport-card-bg {
   transform: scale(1.05);
   filter: brightness(0.9);
   /* escurece um pouco a imagem */
@@ -347,7 +351,7 @@ body {
   /* transição suave do degradê */
 }
 
-.sport-card:hover .sport-card-overlay {
+.sport-card:not([data-demo]):hover .sport-card-overlay {
   background: linear-gradient(to top, rgba(58, 39, 83, 0.6), transparent);
   /* degradê roxo */
 }
@@ -987,7 +991,7 @@ body {
 
 @media (max-width: 992px) {
   .sport-details-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 40px;
   }
 
@@ -1079,10 +1083,6 @@ body {
   font-weight: 300;
   text-align: center;
   color: var(--text-dark);
-}
-
-.search-input:focus {
-  outline: none;
 }
 
 .search-input::placeholder {
@@ -1375,7 +1375,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
+.cta-button:not([data-demo]):hover {
   background-color: var(--secondary-color);
   color: var(--text-dark);
 }
@@ -1531,10 +1531,9 @@ body {
 }
 
 .map-content-wrapper {
-  display: flex;
-  margin: 80px 100px 71px 75px;
   display: grid;
-  grid-template-columns: 700px 1fr;
+  margin: 80px 100px 71px 75px;
+  grid-template-columns: minmax(0, 700px) minmax(0, 1fr);
   gap: 75px;
   align-items: center;
   justify-content: center;
@@ -1640,7 +1639,7 @@ body {
 
   .locations-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
     gap: 40px 26px;
   }
 }
@@ -1665,7 +1664,7 @@ body {
 /* =================================================================== Página Comunidade =================================================================== */
 
 #communities-hero.communities-hero-section {
-  background-image: url(/images/capa-comunidade.webp);
+  background-image: url(../images/capa-comunidade.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2226,4 +2225,99 @@ a {
 .contact-form-btn:active {
   background-color: var(--secondary-color);
   color: var(--text-dark);
+}
+
+/* Indicações de demonstração e ajustes para telas estreitas. */
+.demo-notice {
+  padding: 0.75rem 1rem;
+  background: #f1edfa;
+  color: #3a2753;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+[data-demo], button:disabled { cursor: default; }
+[data-demo]::after { content: " (demo)"; font-size: 0.75rem; }
+button:disabled, input:disabled, textarea:disabled { opacity: 0.7; }
+
+.site-header :focus-visible,
+.carousel-btn:focus-visible {
+  outline: 2px solid var(--text-light);
+  outline-offset: 3px;
+}
+
+.search-form :focus-visible,
+.location-map-button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+.map-header {
+  padding-inline: 20px;
+  text-align: center;
+}
+
+.map-header .section-title {
+  margin-inline: 0;
+}
+
+#map-search-status {
+  min-height: 1.5em;
+}
+
+.location-map-button {
+  align-self: flex-start;
+  margin: 4px 0 4px 50px;
+  min-height: 44px;
+  padding: 6px 12px;
+  border: 1px solid currentColor;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--primary-color);
+  font: inherit;
+  cursor: pointer;
+}
+
+.location-card[hidden] {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonial-track {
+    transition: none;
+  }
+}
+
+[id] { scroll-margin-top: 6rem; }
+.search-input { min-width: 0; }
+.sport-visuals, .sport-info, .teacher-card { min-width: 0; }
+.sport-info p { width: 100%; }
+@media (max-width: 992px) {
+  .advantages-grid { flex-direction: column; align-items: center; }
+}
+@media (max-width: 768px) {
+  .hero-content { width: 100%; padding: 0 20px; }
+  .hero-title { margin: 0 0 18px; }
+  .hero-subtitle { width: 100%; }
+  .hero-cta { margin: 0 auto; max-width: 100%; }
+  .sport-details-grid, .professors-grid, .teachers-grid-esportes {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .sport-visuals img { height: auto; }
+  .sport-info h2 { margin-top: 0; }
+  .gallery-grid { display: grid; grid-template-columns: minmax(0, 1fr); margin: 0; }
+  .gallery-image { width: 100%; height: auto; aspect-ratio: 1; }
+  .advantages-header { padding: 0 20px; }
+  .advantage-card { max-width: 100%; }
+}
+@media (max-width: 768px) {
+  .communities-hero-content { padding: 40px 20px; }
+  .communities-hero-content h1 { margin-left: 0; font-size: 32px; }
+  .communities-hero-content p { margin-left: 0; }
+  .map-content-wrapper { margin: 40px 20px; }
+  .locations-list { grid-template-columns: minmax(0, 1fr); }
+  .location-card { min-width: 0; }
+  .testimonial-slide { flex-direction: column; align-items: center; gap: 20px; }
+  .testimonial-card { width: 100%; max-width: 100%; flex-direction: column; }
+  .testimonial-person { max-width: 100%; height: auto; aspect-ratio: 1; }
 }
